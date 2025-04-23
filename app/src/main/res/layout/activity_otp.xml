@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodie1">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/backarrow"
+        android:contentDescription="@string/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_otp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/text_primary"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_4_digit_code_sent_via_email"
+        android:textSize="15sp"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"/>
+
+    <!-- OTP Boxes -->
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/otpBox1"
+            style="@style/OtpBox"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/otpBox2"
+            style="@style/OtpBox"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/otpBox3"
+            style="@style/OtpBox"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/otpBox4"
+            style="@style/OtpBox"/>
+    </LinearLayout>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_red"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/otpContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Resend and Timer -->
+    <LinearLayout
+        android:id="@+id/resendContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvError"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvResendPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/didn_t_receive_the_otp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend"
+                android:textColor="@color/success_green"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_expires_in_2_59"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <!-- Keypad -->
+    <!-- Keypad Grid -->
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resendContainer">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_2"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_3"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_4"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_5"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_6"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_7"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_8"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_9"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/ok"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <ImageButton
+            android:id="@+id/btnBackspace"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:contentDescription="@string/backspace"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/backspace" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

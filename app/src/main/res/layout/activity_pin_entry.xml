@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodie1">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Enter PIN Text -->
+    <TextView
+        android:id="@+id/tvEnterPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_pin"
+        android:textColor="#A1A1A1"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- PIN Dots -->
+    <LinearLayout
+        android:id="@+id/pinDotsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterPin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/pinDot1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/pin_dot_empty"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/pinDot2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/pin_dot_empty"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/pinDot3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/pin_dot_empty"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/pinDot4"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/pin_dot_empty"/>
+    </LinearLayout>
+
+    <!-- Keypad Grid -->
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinDotsContainer">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_2"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_3"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_4"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_5"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_6"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_7"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_8"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_9"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/ok"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:text="@string/_0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <ImageButton
+            android:id="@+id/btnBackspace"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypad_button_background"
+            android:contentDescription="@string/backspace"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/backspace" />
+    </GridLayout>
+
+    <!-- Forget PIN Text -->
+    <TextView
+        android:id="@+id/tvForgetPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_pin"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/keypadGrid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

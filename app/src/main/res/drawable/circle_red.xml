@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer stroke -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFC9C9" /> <!-- Light red color for stroke -->
+            <size android:width="12dp" android:height="12dp" />
+        </shape>
+    </item>
+    <!-- Inner circle -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#F44336" /> <!-- Red color for inner circle -->
+        </shape>
+    </item>
+</layer-list>

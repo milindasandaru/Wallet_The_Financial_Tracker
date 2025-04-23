@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OtpBox">
+        <item name="android:layout_width">54dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@drawable/otp_box_bg</item>
+    </style>
+    <style name="KeypadButton">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/keypad_button_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <!-- Keep your existing styling -->
+        <item name="android:background">@drawable/rounded_white_bg</item>
+    </style>
+
+</resources>
