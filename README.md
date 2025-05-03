@@ -1,7 +1,7 @@
 # WALLET – Track Smarter, Spend Better, Save More…
 
 <div align="center">
-  <img src="assets/logo.png" alt="WALLET App Logo" width="120" />
+  <img src="app/src/main/res/drawable/logo1.png" alt="WALLET App Logo" width="120" />
   <h3>Your all-in-one personal finance management app</h3>
 </div>
 
@@ -23,7 +23,6 @@
 - **App Logo:**  
   *(< Add your logo here or above >)*-->
 
----
 
 ## ✨ Key Features
 
@@ -119,7 +118,7 @@ wallet/
 │ ├── insights.png
 │ └── budget.png
 └── README.md
-
+##
 
 ---
 
