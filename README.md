@@ -80,7 +80,6 @@ _Add screenshots of your main app screens here!_
 | -------------- | ------------------------ | ----------------- |
 | ![](screenshots/home.png) | ![](screenshots/insights.png) | ![](screenshots/budget.png) |-->
 
----
 
 ## 🏫 University Project Info
 
@@ -105,21 +104,21 @@ Connect an Android device or use the emulator, then click **Run**.
 
 ## 📁 Project Structure
 
+```
 wallet/
 ├── app/
-│ ├── src/
-│ │ ├── main/
-│ │ │ ├── java/com/yourdomain/wallet
-│ │ │ ├── res/
-│ │ │ └── AndroidManifest.xml
-│ └── build.gradle
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/yourdomain/wallet
+│   │   │   ├── res/
+│   │   │   └── AndroidManifest.xml
+│   └── build.gradle
 ├── screenshots/
-│ ├── home.png
-│ ├── insights.png
-│ └── budget.png
+│   ├── home.png
+│   ├── insights.png
+│   └── budget.png
 └── README.md
-##
-
+```
 ---
 
 ## 📜 License
