@@ -7,7 +7,7 @@
 
 ---
 
-## 📱 Description
+## Description
 
 **WALLET** is a personal finance management mobile application that empowers users to take full control over their money. Whether you're budgeting, monitoring savings, or analyzing spending habits, WALLET provides an effortless, intuitive experience with:
 
@@ -24,7 +24,7 @@
   *(< Add your logo here or above >)*-->
 
 
-## ✨ Key Features
+## Key Features
 
 ### 1. Income & Expense Management
 - Add, edit, and delete income or expense entries.
@@ -53,7 +53,7 @@
 
 ---
 
-## 🛠️ How WALLET Works
+## How WALLET Works
 
 1. **Set up your wallet**: Add your monthly budget and preferred currency.
 2. **Log income & expenses**: Track your money in a few taps.
@@ -63,7 +63,7 @@
 
 ---
 
-## 💡 Why Choose WALLET?
+## Why Choose WALLET?
 
 - **Simple & Intuitive Design** – Easy-to-use for everyone.
 - **Safe & Secure** – All data is stored locally and securely.
@@ -81,7 +81,7 @@ _Add screenshots of your main app screens here!_
 | ![](screenshots/home.png) | ![](screenshots/insights.png) | ![](screenshots/budget.png) |-->
 
 
-## 🏫 University Project Info
+## University Project Info
 
 - **Module**: MAD (Mobile Application Development)
 - **Course**: Sri Lanka Institute of Information Technology (SLIIT)
@@ -90,7 +90,7 @@ _Add screenshots of your main app screens here!_
 
 ---
 
-## ⚙️ Installation & Usage
+## Installation & Usage
 
 1. **Clone this repository:**
 
@@ -102,7 +102,7 @@ Connect an Android device or use the emulator, then click **Run**.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 wallet/
@@ -121,7 +121,7 @@ wallet/
 ```
 ---
 
-## 📜 License
+## License
 
 This app was developed as part of the MAD module at SLIIT.  
 © 2024 SAMS SENARATH. All rights reserved.
