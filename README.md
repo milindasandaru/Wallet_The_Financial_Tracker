@@ -11,7 +11,7 @@
 
 **WALLET** is a personal finance management mobile application that empowers users to take full control over their money. Whether you're budgeting, monitoring savings, or analyzing spending habits, WALLET provides an effortless, intuitive experience with:
 
-- Real-time transactions & insights
+- Real-time transactions & insight
 - Smart, secure data storage
 - Powerful analytics for better financial decisions
 
